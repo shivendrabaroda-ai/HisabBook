@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Indian Rupee / numeric font optimization */
+  .font-mono-numbers {
+    font-feature-settings: "tnum" 1, "cv01" 1;
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars for clean modern mobile & desktop experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.6);
+}
+
+/* Printable PDF Statement rules */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}

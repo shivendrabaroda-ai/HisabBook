@@ -1,0 +1,8 @@
+{
+  "name": "HisabBook - Daily Expense Tracker",
+  "description": "Smart, bilingual (English & Hindi) daily expense and budget tracker with multi-account support, recurring bills, and comprehensive reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
